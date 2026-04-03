@@ -5,7 +5,7 @@
 
 milestones = {
     "Project Preconsult": {
-        "Apr 1": ["A", "Arrange meeting with Fanny and Alex, look into REB status/renewal, clean up final direction", False],
+        "Apr 1": ["A", "Arrange meeting with Fanny and Alex, look into REB status/renewal, clean up final direction", True],
         "Apr 13": ["A", "Write up design workshop method and results", False],
         "Apr 15": ["D", "Renew REB / make necessary revisions", False],
         "Apr 20": ["D", "Finish writing up design workshop method and results", False],
