@@ -48,8 +48,15 @@ def assign_colors(projects):
     return {name: COLORS[i % len(COLORS)] for i, name in enumerate(projects)}
 
 
+def hex_to_rgba(hex_color, alpha):
+    """Convert '#rrggbb' to 'rgba(r,g,b,a)'."""
+    h = hex_color.lstrip("#")
+    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    return f"rgba({r},{g},{b},{alpha})"
+
+
 def render_row(date_str, entry_type, description, complete, color):
-    style_parts = [f"border-left: 4px solid {color}"]
+    style_parts = [f"border-left: 4px solid {color}", f"background: {hex_to_rgba(color, 0.06)}"]
     classes = []
     if complete:
         classes.append("complete")
