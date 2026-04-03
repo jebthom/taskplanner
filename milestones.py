@@ -13,6 +13,7 @@ milestones = {
         "Apr 27": ["D", "Refine methods and instruments", False],
         "May 15": ["A", "Run study (approximate)", False],
         "Jun 15": ["A", "Analyze and write up results", False],
+        "Jun 22": ["D", "Paper draft complete", False],
         "Sep 1": ["D", "Submit to CHI", False],
     },
     "Masters Project AgentVis CLI Design": {
@@ -23,6 +24,7 @@ milestones = {
         "Jul 27": ["D", "Finish running evaluation study", False],
         "Aug 3": ["A", "Analyze and write up results", False],
         "Aug 10": ["A", "Analyze and write up results", False],
+        "Aug 17": ["D", "Paper draft complete", False],
         "Sep 1": ["D", "Submit to CHI", False],
     },
     "Project Design Space": {
