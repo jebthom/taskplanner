@@ -5,12 +5,12 @@
 
 milestones = {
     "Project Preconsult": {
-        "Apr 1": ["A", "Arrange meeting with Fanny and Alex, look into REB status/renewal, clean up final direction", True],
-        "Apr 13": ["A", "Write up design workshop method and results", False],
-        "Apr 15": ["D", "Renew REB / make necessary revisions", False],
-        "Apr 20": ["D", "Finish writing up design workshop method and results", False],
-        "Apr 22": ["D", "Design stage 2 study / recruitment strategies", False],
-        "Apr 27": ["D", "Refine methods and instruments", False],
+        "Apr 4": ["A", "Arrange meeting with Fanny and Alex, look into REB status/renewal, clean up final direction", True],
+        "Apr 20": ["A", "Write up design workshop method and results", False],
+        "Apr 20": ["D", "Renew REB / make necessary revisions", False],
+        "Apr 27": ["D", "Finish writing up design workshop method and results", False],
+        "Apr 30": ["D", "Design stage 2 study / recruitment strategies", False],
+        "Apr 30": ["D", "Refine methods and instruments", False],
         "May 15": ["A", "Run study (approximate)", False],
         "Jun 15": ["A", "Analyze and write up results", False],
         "Jun 22": ["D", "Paper draft complete", False],
