@@ -4,6 +4,17 @@
 # Complete: True / False
 
 milestones = {
+    "Masters Project AgentVis CLI Design": [
+        ("May 18", "D", "Finish design/low-fidelity prototypes for CLI", False),
+        ("Jun 15", "D", "Finish prototype implementation in OpenCode/VSCode", False),
+        ("Jun 22", "D", "Finish task design for greenfield/brownfield tasks", False),
+        ("Jun 29", "D", "Finish evaluation study protocol", False),
+        ("Jul 27", "D", "Finish running evaluation study", False),
+        ("Aug 3", "A", "Analyze and write up results", False),
+        ("Aug 10", "A", "Analyze and write up results", False),
+        ("Aug 17", "D", "Paper draft complete", False),
+        ("Sep 1", "D", "Submit to CHI", False),
+    ],
     "Project Preconsult": [
         ("Apr 4", "A", "Arrange meeting with Fanny and Alex, look into REB status/renewal, clean up final direction", True),
         ("Apr 20", "A", "Write up design workshop method and results", False),
@@ -14,17 +25,6 @@ milestones = {
         ("May 15", "A", "Run study (approximate)", False),
         ("Jun 15", "A", "Analyze and write up results", False),
         ("Jun 22", "D", "Paper draft complete", False),
-        ("Sep 1", "D", "Submit to CHI", False),
-    ],
-    "Masters Project AgentVis CLI Design": [
-        ("May 18", "D", "Finish design/low-fidelity prototypes for CLI", False),
-        ("Jun 15", "D", "Finish prototype implementation in OpenCode/VSCode", False),
-        ("Jun 22", "D", "Finish task design for greenfield/brownfield tasks", False),
-        ("Jun 29", "D", "Finish evaluation study protocol", False),
-        ("Jul 27", "D", "Finish running evaluation study", False),
-        ("Aug 3", "A", "Analyze and write up results", False),
-        ("Aug 10", "A", "Analyze and write up results", False),
-        ("Aug 17", "D", "Paper draft complete", False),
         ("Sep 1", "D", "Submit to CHI", False),
     ],
     "Project Design Space": [
