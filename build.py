@@ -170,7 +170,7 @@ def main():
     per_project = {name: [] for name in project_names}
 
     for project, items in milestones.items():
-        for date_str, (etype, desc, complete) in items.items():
+        for date_str, etype, desc, complete in items:
             dt = parse_date(date_str)
             formatted = format_date(dt)
             row = (dt, project, formatted, etype, desc, complete)
