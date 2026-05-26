@@ -4,7 +4,7 @@
 import os
 import shutil
 from datetime import datetime
-from milestones import milestones
+from milestones import milestones, paper_completion
 
 YEAR = 2026  # default year for parsing dates
 
@@ -120,6 +120,12 @@ tr.complete td { color: #94a3b8; text-decoration: line-through; }
 .badge-activity { background: #dbeafe; color: #1d4ed8; }
 .badge-deliverable { background: #fef3c7; color: #92400e; }
 footer { text-align: center; padding: 2rem; color: #94a3b8; font-size: 0.8rem; }
+.paper-tracker { text-align: center; margin-bottom: 2rem; }
+.paper-emoji { font-size: 75pt; line-height: 1; display: block; margin-bottom: 1rem; }
+.paper-table { width: auto; min-width: 320px; margin: 0 auto; font-size: 0.9rem; }
+.paper-table th, .paper-table td { padding: 0.4rem 1rem; text-align: center; }
+.paper-table td:first-child { text-align: left; font-weight: 500; }
+.paper-check { color: #16a34a; font-weight: 700; }
 """
 
 
@@ -153,6 +159,25 @@ def build_table(rows_data, color_map):
     return (
         '<table>\n<thead><tr><th>Date</th><th>Description</th><th>Type</th></tr></thead>\n'
         f'<tbody>\n{rows_html}</tbody>\n</table>\n'
+    )
+
+
+def build_paper_tracker(project):
+    sections = paper_completion.get(project, [])
+    if not sections:
+        return ""
+    rows = ""
+    for name, draft, final in sections:
+        d = '<span class="paper-check">&#10003;</span>' if draft else ""
+        f = '<span class="paper-check">&#10003;</span>' if final else ""
+        rows += f'<tr><td>{name}</td><td>{d}</td><td>{f}</td></tr>\n'
+    return (
+        '<div class="paper-tracker">\n'
+        '<span class="paper-emoji">&#128196;</span>\n'
+        '<table class="paper-table">\n'
+        '<thead><tr><th>Section</th><th>Draft</th><th>Final</th></tr></thead>\n'
+        f'<tbody>\n{rows}</tbody>\n</table>\n'
+        '</div>\n'
     )
 
 
@@ -196,6 +221,7 @@ def main():
     for name in project_names:
         nav = build_nav(project_names, color_map, active=name)
         body = f"<h2>{name}</h2>\n"
+        body += build_paper_tracker(name)
         body += build_table(per_project[name], color_map)
         with open(os.path.join(out, f"{slug(name)}.html"), "w") as f:
             f.write(page(f"Milestones — {name}", nav, body))

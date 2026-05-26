@@ -33,29 +33,59 @@ tr.complete td { color: #94a3b8; text-decoration: line-through; }
 .badge-activity { background: #dbeafe; color: #1d4ed8; }
 .badge-deliverable { background: #fef3c7; color: #92400e; }
 footer { text-align: center; padding: 2rem; color: #94a3b8; font-size: 0.8rem; }
+.paper-tracker { text-align: center; margin-bottom: 2rem; }
+.paper-emoji { font-size: 75pt; line-height: 1; display: block; margin-bottom: 1rem; }
+.paper-table { width: auto; min-width: 320px; margin: 0 auto; font-size: 0.9rem; }
+.paper-table th, .paper-table td { padding: 0.4rem 1rem; text-align: center; }
+.paper-table td:first-child { text-align: left; font-weight: 500; }
+.paper-check { color: #16a34a; font-weight: 700; }
 </style>
 </head>
 <body>
 <header><h1>Project Milestones</h1></header>
 <nav><a href="index.html" class="nav-link ">All Projects</a>
-<a href="project-preconsult.html" class="nav-link "><span class="dot" style="background:#2563eb"></span>Project Preconsult</a>
-<a href="masters-project-agentvis-cli-design.html" class="nav-link "><span class="dot" style="background:#dc2626"></span>Masters Project AgentVis CLI Design</a>
+<a href="masters-project-agentvis-cli-design.html" class="nav-link "><span class="dot" style="background:#2563eb"></span>Masters Project AgentVis CLI Design</a>
+<a href="project-preconsult.html" class="nav-link "><span class="dot" style="background:#dc2626"></span>Project Preconsult</a>
 <a href="project-design-space.html" class="nav-link active"><span class="dot" style="background:#16a34a"></span>Project Design Space</a></nav>
 <main>
 <h2>Project Design Space</h2>
+<div class="paper-tracker">
+<span class="paper-emoji">&#128196;</span>
+<table class="paper-table">
+<thead><tr><th>Section</th><th>Draft</th><th>Final</th></tr></thead>
+<tbody>
+<tr><td>Intro</td><td><span class="paper-check">&#10003;</span></td><td></td></tr>
+<tr><td>Related Work</td><td></td><td></td></tr>
+<tr><td>Formative Study</td><td></td><td></td></tr>
+<tr><td>Literature Review</td><td></td><td></td></tr>
+<tr><td>Expert Review</td><td></td><td></td></tr>
+<tr><td>Discussion</td><td></td><td></td></tr>
+<tr><td>Conclusion</td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
 <table>
 <thead><tr><th>Date</th><th>Description</th><th>Type</th></tr></thead>
 <tbody>
-<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">May 25</td><td class="desc-col"><strong>Finish any additional recruitment and interview analysis</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
-<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jun 29</td><td class="desc-col"><strong>Finish any additional iterations on literature review</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
-<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jul 13</td><td class="desc-col"><em>Analyze and write up results</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
+<tr class="complete" style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">May 11</td><td class="desc-col"><strong>Milestones and Capacity Meeting/Decisions</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
+<tr class="complete" style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">May 18</td><td class="desc-col"><em>Leping: RW; Jeb: Formative Study rework and Intro draft</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
+<tr class="complete" style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">May 22</td><td class="desc-col"><strong>Draft Intro (Writeup)</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">May 25</td><td class="desc-col"><em>Leping: RW; Jeb: Formative Study rework</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jun 1</td><td class="desc-col"><strong>Intro, RW, Formative Study drafts</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jun 8</td><td class="desc-col"><em>Conceptualize lit. review changes and find exemplars; create expert review protocol</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jun 15</td><td class="desc-col"><em>Conceptualize lit. review changes and find exemplars; create expert review protocol</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jun 22</td><td class="desc-col"><em>Write lit. review draft; recruit experts</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jun 29</td><td class="desc-col"><em>Write lit. review draft; recruit experts</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jul 6</td><td class="desc-col"><strong>Literature Review Draft</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jul 13</td><td class="desc-col"><em>Execute expert review/validation study</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
 <tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jul 20</td><td class="desc-col"><em>Analyze and write up results</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
-<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jul 27</td><td class="desc-col"><strong>Paper draft complete</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Jul 27</td><td class="desc-col"><em>Analyze and write up results</em></td><td class="type-col"><span class="badge badge-activity">Activity</span></td></tr>
+<tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Aug 3</td><td class="desc-col"><strong>Paper draft complete</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
 <tr style="border-left: 4px solid #16a34a; background: rgba(22,163,74,0.06)"><td class="date-col">Sep 1</td><td class="desc-col"><strong>Submit to CHI</strong></td><td class="type-col"><span class="badge badge-deliverable">Deliverable</span></td></tr>
 </tbody>
 </table>
 
 </main>
-<footer>Last built 2026-04-06 13:44</footer>
+<footer>Last built 2026-05-26 08:58</footer>
 </body>
 </html>

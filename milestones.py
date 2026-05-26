@@ -77,3 +77,37 @@ milestones = {
         ("Sep 1", "D", "Submit to CHI", False),
     ],
 }
+
+# Paper completion tracker
+# Format: { "Project Name": [ ("Section Name", DraftComplete (T/F), FinalComplete (T/F)) ] }
+paper_completion = {
+    "Masters Project AgentVis CLI Design": [
+        ("Intro", True, False),
+        ("Related Work", False, False),
+        ("System", False, False),
+        ("Design Studies", False, False),
+        ("Experiment Methods", False, False),
+        ("Experiment Results", False, False),
+        ("Discussion", False, False),
+        ("Conclusion", False, False),
+    ],
+    "Project Preconsult": [
+        ("Intro", False, False),
+        ("Related Work", False, False),
+        ("Workshop Methods", True, False),
+        ("Workshop Results", True, False),
+        ("Survey Methods", False, False),
+        ("Survey Results", False, False),
+        ("Discussion", False, False),
+        ("Conclusion", False, False),
+    ],
+    "Project Design Space": [
+        ("Intro", True, False),
+        ("Related Work", True, False),
+        ("Formative Study", False, False),
+        ("Literature Review", False, False),
+        ("Expert Review", False, False),
+        ("Discussion", False, False),
+        ("Conclusion", False, False),
+    ],
+}
